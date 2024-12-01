@@ -107,6 +107,26 @@ To format code:
 poetry run ruff format .
 ```
 
+### Pre-commit Setup
+
+1. Install pre-commit:
+```bash
+pipx install pre-commit
+```
+
+2. Install the pre-commit hooks:
+```bash
+pre-commit install
+```
+
+3. (Optional) Run against all files:
+```bash
+pre-commit run --all-files
+```
+
+For more detailed information about setting up Poetry and managing dependencies, you can refer to this article:
+https://medium.com/@ren.nakamura/building-a-robust-prototyping-environment-with-poetry-and-ruff-part-2-f615235052b0
+
 ## Available Routes
 
 - `/` - Home route (redirects to login if not authenticated)
