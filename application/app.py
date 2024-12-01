@@ -1,5 +1,4 @@
 import os
-import sys
 from urllib.parse import quote_plus, urlencode
 
 import gradio as gr
@@ -7,14 +6,11 @@ from authlib.integrations.starlette_client import OAuth, OAuthError
 from dotenv import load_dotenv
 from fastapi import FastAPI, Request
 from fastapi.responses import RedirectResponse
-from starlette.middleware.base import BaseHTTPMiddleware
-from starlette.middleware.sessions import SessionMiddleware
-
 from interfaces.login import LoginInterface
 from interfaces.logout import LogoutInterface
 from interfaces.main_app import MainApplicationInterface
-
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from starlette.middleware.base import BaseHTTPMiddleware
+from starlette.middleware.sessions import SessionMiddleware
 
 
 class AuthMiddleware(BaseHTTPMiddleware):
