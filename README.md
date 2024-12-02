@@ -1,4 +1,4 @@
-# Auth0 + Gradio + FastAPI Web Application Seed
+# Gradio + FastAPI + Auth0 Web Application Seed
 
 This is a seed project that demonstrates how to create a web application using Gradio and FastAPI with Auth0 authentication. This template provides a secure web interface with authentication flow.
 
@@ -40,9 +40,8 @@ These values can be found in your Auth0 Dashboard under Application Settings.
 1. Create a new Application in Auth0 Dashboard
 2. Set the following in your Auth0 Application settings:
    - Application Type: `Regular Web Application`
-   - Allowed Callback URLs: `http://localhost:8000/auth`
-   - Allowed Logout URLs: `http://localhost:8000`
-   - Allowed Web Origins: `http://localhost:8000`
+   - Allowed Callback URLs: `http://localhost:8000/auth`,`http://127.0.0.1:8000/auth`
+   - Allowed Logout URLs: `http://localhost:8000`,`http://127.0.0.1:8000`
 
 ## Installation
 
