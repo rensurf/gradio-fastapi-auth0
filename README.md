@@ -52,6 +52,7 @@ pipx install poetry
 
 2. Install dependencies using Poetry:
 ```bash
+poetry env use 3.12
 poetry install
 ```
 
